@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <StatsPreviewComponent/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StatsPreviewComponent from './components/StatsPreviewComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StatsPreviewComponent
   }
 }
 </script>
 
 <style>
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-blue: hsl(244, 38%, 16%);
+  --purple: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Lexend Deca', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: var(--white);
 }
+
 </style>
