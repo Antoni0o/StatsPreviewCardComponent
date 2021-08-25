@@ -261,7 +261,7 @@ export default {
   }
   }
 
-  @media (max-height: 700px) {
+  @media (max-height: 730px) {
     #content .stats {
       display: none;
     }
