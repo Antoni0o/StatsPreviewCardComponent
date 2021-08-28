@@ -3,7 +3,7 @@
     <section>
       <div id="content">
         <h1>Get <b>insights</b> that help your business grow.</h1>
-        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        <p class='text'>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
         experience, and overall efficiency.</p>
         <div class="stats">
           <div class="companies">
@@ -69,7 +69,7 @@ export default {
   
   /* Content */ 
   #content {
-    margin: 7rem 7rem 2rem 7rem;
+    margin: 7rem 7rem 0 7rem;
   }
 
   /* Texts */ 
@@ -80,17 +80,17 @@ export default {
     color: var(--purple);
   }
 
-  #content p {
+  #content .text {
     font-size: 2rem;
     line-height: 3rem;
     font-family: 'Inter', sans-serif;
     color: var(--transparent-white);
+    margin-bottom: 8rem;
   }
   
   /* Stats */
   #content .stats {
     display: flex;
-    margin-top: 7rem;
 
     gap: 10rem;
   }
@@ -225,7 +225,7 @@ export default {
   }
 
   #content {
-    margin: 7rem 7rem 2rem 7rem;
+    margin: 7rem 7rem 0rem 7rem;
   }
 
   /* Texts */ 
@@ -264,6 +264,15 @@ export default {
   @media (max-height: 730px) {
     #content .stats {
       display: none;
+    }
+  }
+
+  @media (max-height: 860px) {
+    #content {
+      margin: 2rem 2rem 0 2rem;
+    }
+    #content .text {
+    margin-bottom: 2rem
     }
   }
 </style>
